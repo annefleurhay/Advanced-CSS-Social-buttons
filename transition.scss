@@ -1,0 +1,5 @@
+@mixin transition {
+    transform: translateX(0px);
+    transition: transform 350ms ease-in-out;
+}
+

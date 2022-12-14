@@ -1,0 +1,83 @@
+@use "./components" as c;
+@use "./transition.scss" as t;
+@use "./container" as a;
+
+body {
+    background-color: rgb(109, 139, 150);
+    margin: c.$zero;
+    padding-top: 20px;
+}
+.container {
+    @include a.container;
+
+    .blog {
+        display: flex;
+        background-color: c.$colorblog;
+        transform: c.$trans;
+
+        &:hover {
+            @include t.transition;
+        }
+        #laptop {
+            padding: 8px;
+
+            color: white;
+        }
+    }
+
+    .twitter {
+        display: c.$display;
+        background-color: c.$colortwitter;
+        transform: c.$trans;
+
+        &:hover {
+            transform: translateX(c.$zero);
+            transition: transform 350ms ease-in-out;
+        }
+        #twit {
+            padding: 8px;
+            color: white;
+        }
+    }
+    .linkedin {
+        display: c.$display;
+        background-color: c.$colorlinkedin;
+        transform: c.$trans;
+
+        &:hover {
+            transform: translateX(c.$zero);
+            transition: transform 350ms ease-in-out;
+        }
+        #linked {
+            padding: 8px;
+            color: white;
+        }
+    }
+    .facebook {
+        display: c.$display;
+        background-color: c.$colorfacebook;
+        transform: c.$trans;
+
+        &:hover {
+            transform: translateX(c.$zero);
+            transition: transform 350ms ease-in-out;
+        }
+        #fb {
+            padding: 8px;
+            color: white;
+        }
+    }
+    .github {
+        display: flex;
+        background-color: c.$colorgithub;
+        transform: c.$trans;
+        &:hover {
+            transform: translateX(c.$zero);
+            transition: transform 350ms ease-in-out;
+        }
+        #gh {
+            padding: 8px;
+            color: white;
+        }
+    }
+}

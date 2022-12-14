@@ -1,0 +1,27 @@
+@mixin container {
+
+    display: flex;
+    justify-content: end;
+    align-items: flex-end; 
+    overflow: hidden;
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    
+    }
+    li {
+        padding: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;   
+         
+    }
+    a:link, a:visited, a:active {
+        color: white;
+    }
+}
+
+
+
+    

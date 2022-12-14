@@ -1,0 +1,92 @@
+body {
+  background-color: rgb(109, 139, 150);
+  margin: 0;
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container li {
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.container a:link, .container a:visited, .container a:active {
+  color: white;
+}
+.container .blog {
+  display: flex;
+  background-color: #e17b77;
+  transform: translateX(136px);
+}
+.container .blog:hover {
+  transform: translateX(0px);
+  transition: transform 350ms ease-in-out;
+}
+.container .blog #laptop {
+  padding: 8px;
+  color: white;
+}
+.container .twitter {
+  display: flex;
+  background-color: #00aced;
+  transform: translateX(136px);
+}
+.container .twitter:hover {
+  transform: translateX(0);
+  transition: transform 350ms ease-in-out;
+}
+.container .twitter #twit {
+  padding: 8px;
+  color: white;
+}
+.container .linkedin {
+  display: flex;
+  background-color: #007bb6;
+  transform: translateX(136px);
+}
+.container .linkedin:hover {
+  transform: translateX(0);
+  transition: transform 350ms ease-in-out;
+}
+.container .linkedin #linked {
+  padding: 8px;
+  color: white;
+}
+.container .facebook {
+  display: flex;
+  background-color: #3b5998;
+  transform: translateX(136px);
+}
+.container .facebook:hover {
+  transform: translateX(0);
+  transition: transform 350ms ease-in-out;
+}
+.container .facebook #fb {
+  padding: 8px;
+  color: white;
+}
+.container .github {
+  display: flex;
+  background-color: #333;
+  transform: translateX(136px);
+}
+.container .github:hover {
+  transform: translateX(0);
+  transition: transform 350ms ease-in-out;
+}
+.container .github #gh {
+  padding: 8px;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
